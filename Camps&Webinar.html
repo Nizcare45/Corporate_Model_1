@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 
     <button class="toggle-btn">☰</button>
@@ -149,6 +151,29 @@
         </div>
         <!-- Popup End-->
 
+        <!-- Topic popup -->
+        <div class="modal fade" id="dynamicTopicModal" tabindex="-1" aria-labelledby="dynamicTopicModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold" id="dynamicTopicModalLabel">Topic Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body" id="modalBodyContent">
+                        <!-- Dynamic content goes here -->
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="p-2 rounded-3 border-0" style="background-color: #229ea6; color: #fff;">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topic popup End-->
+
         <!-- Paid Webinar -->
         <div class="container mt-4">
             <h3 class="fw-bold my-5">Paid Webinar</h3>
@@ -169,7 +194,19 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="fw-bold text-center mt-3" style="font-size: 16px;">Mental Health</div>
+                        <a href="#" class="mt-3 rounded fw-bold text-center text-decoration-none select-btn"
+                            style="background-color: #fff; color: black;" data-bs-toggle="modal"
+                            data-bs-target="#dynamicTopicModal" data-title1="1. Managing Workplace Stress"
+                            data-description1="Effective stress management in the workplace through mindfulness, prioritization, and self-care, boosting productivity and wellbeing"
+                            data-title2="2. Mindfulness & Meditation Techniques During the Workday"
+                            data-description2="Integrating mindfulness and meditation into the workday to reduce stress, boost focus, and enhance overall wellbeing."
+                            data-title3="3. Mental Health Support Systems"
+                            data-description3="Building strong mental health support systems through open communication, empathy, and accessible resources for overall wellbeing."
+                            data-title4="4. Anxiety and Depression Awareness"
+                            data-description4="Raising awareness about anxiety and depression to promote understanding, reduce stigma, and support mental health journeys.">
+                            Mental Health
+                        </a>
+
                     </div>
                 </div>
 
@@ -196,8 +233,8 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="bg-white rounded p-3 equal-height">
                         <div class="card-container rounded shadow-lg">
-                            <img src="./asset/Paid-Webinar/Women's Health.jpg" alt="Avatar" class="d-block w-100 rounded"
-                                height="250px" style="object-fit: cover;">
+                            <img src="./asset/Paid-Webinar/Women's Health.jpg" alt="Avatar"
+                                class="d-block w-100 rounded" height="250px" style="object-fit: cover;">
                             <div
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
@@ -215,8 +252,8 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="bg-white rounded p-3 equal-height">
                         <div class="card-container rounded shadow-lg">
-                            <img src="./asset/Paid-Webinar/Obesity Awareness.jpg" alt="Avatar" class="d-block w-100 rounded"
-                                height="250px" style="object-fit: cover;">
+                            <img src="./asset/Paid-Webinar/Obesity Awareness.jpg" alt="Avatar"
+                                class="d-block w-100 rounded" height="250px" style="object-fit: cover;">
                             <div
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
@@ -234,8 +271,8 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="bg-white rounded p-3 equal-height">
                         <div class="card-container rounded shadow-lg">
-                            <img src="./asset/Paid-Webinar/Stroke Awareness.jpg" alt="Avatar" class="d-block w-100 rounded"
-                                height="250px" style="object-fit: cover;">
+                            <img src="./asset/Paid-Webinar/Stroke Awareness.jpg" alt="Avatar"
+                                class="d-block w-100 rounded" height="250px" style="object-fit: cover;">
                             <div
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
@@ -253,14 +290,13 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="bg-white rounded p-3 equal-height">
                         <div class="card-container rounded shadow-lg">
-                            <img src="./asset/Paid-Webinar/Cancer Awareness.jpg" alt="Avatar" class="d-block w-100 rounded" height="250px"
-                                style="object-fit: cover;">
+                            <img src="./asset/Paid-Webinar/Cancer Awareness.jpg" alt="Avatar"
+                                class="d-block w-100 rounded" height="250px" style="object-fit: cover;">
                             <div
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Cancer Awareness"
-                                    data-fees="4000">
+                                    data-bs-target="#bookingModal" data-event="Cancer Awareness" data-fees="4000">
                                     Select
                                 </a>
                             </div>
@@ -299,8 +335,7 @@
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Neurology"
-                                    data-fees="">
+                                    data-bs-target="#bookingModal" data-event="Neurology" data-fees="">
                                     Select
                                 </a>
                             </div>
@@ -320,8 +355,7 @@
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Oncology"
-                                    data-fees="">
+                                    data-bs-target="#bookingModal" data-event="Oncology" data-fees="">
                                     Select
                                 </a>
                             </div>
@@ -341,8 +375,7 @@
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Orthopaedics"
-                                    data-fees="">
+                                    data-bs-target="#bookingModal" data-event="Orthopaedics" data-fees="">
                                     Select
                                 </a>
                             </div>
@@ -362,8 +395,7 @@
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Dermatology"
-                                    data-fees="">
+                                    data-bs-target="#bookingModal" data-event="Dermatology" data-fees="">
                                     Select
                                 </a>
                             </div>
@@ -376,14 +408,13 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="bg-white rounded p-3 equal-height">
                         <div class="card-container rounded shadow-lg">
-                            <img src="./asset/Paid-Webinar/Gastroenterology.jpg" alt="Avatar" class="d-block w-100 rounded"
-                                height="250px" style="object-fit: cover;">
+                            <img src="./asset/Paid-Webinar/Gastroenterology.jpg" alt="Avatar"
+                                class="d-block w-100 rounded" height="250px" style="object-fit: cover;">
                             <div
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Gastroenterology"
-                                    data-fees="">
+                                    data-bs-target="#bookingModal" data-event="Gastroenterology" data-fees="">
                                     Select
                                 </a>
                             </div>
@@ -402,8 +433,7 @@
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Urology"
-                                    data-fees="">
+                                    data-bs-target="#bookingModal" data-event="Urology" data-fees="">
                                     Select
                                 </a>
                             </div>
@@ -422,8 +452,7 @@
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Gynaecology"
-                                    data-fees="">
+                                    data-bs-target="#bookingModal" data-event="Gynaecology" data-fees="">
                                     Select
                                 </a>
                             </div>
@@ -442,8 +471,7 @@
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Diabetes"
-                                    data-fees="Free">
+                                    data-bs-target="#bookingModal" data-event="Diabetes" data-fees="Free">
                                     Select
                                 </a>
                             </div>
@@ -456,14 +484,13 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="bg-white rounded p-3 equal-height">
                         <div class="card-container rounded shadow-lg">
-                            <img src="./asset/Paid-Webinar/Respiratory Health.jpg" alt="Avatar" class="d-block w-100 rounded"
-                                height="250px" style="object-fit: cover;">
+                            <img src="./asset/Paid-Webinar/Respiratory Health.jpg" alt="Avatar"
+                                class="d-block w-100 rounded" height="250px" style="object-fit: cover;">
                             <div
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Respiratory Health"
-                                    data-fees="">
+                                    data-bs-target="#bookingModal" data-event="Respiratory Health" data-fees="">
                                     Select
                                 </a>
                             </div>
@@ -482,8 +509,7 @@
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Nutrition"
-                                    data-fees="">
+                                    data-bs-target="#bookingModal" data-event="Nutrition" data-fees="">
                                     Select
                                 </a>
                             </div>
@@ -502,8 +528,7 @@
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Sleep Health"
-                                    data-fees="">
+                                    data-bs-target="#bookingModal" data-event="Sleep Health" data-fees="">
                                     Select
                                 </a>
                             </div>
@@ -516,14 +541,13 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="bg-white rounded p-3 equal-height">
                         <div class="card-container rounded shadow-lg">
-                            <img src="./asset/Paid-Webinar/Wellness and Self-Care.jpg" alt="Avatar" class="d-block w-100 rounded"
-                                height="250px" style="object-fit: cover;">
+                            <img src="./asset/Paid-Webinar/Wellness and Self-Care.jpg" alt="Avatar"
+                                class="d-block w-100 rounded" height="250px" style="object-fit: cover;">
                             <div
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Wellness and Self-Care"
-                                    data-fees="">
+                                    data-bs-target="#bookingModal" data-event="Wellness and Self-Care" data-fees="">
                                     Select
                                 </a>
                             </div>
@@ -536,14 +560,13 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="bg-white rounded p-3 equal-height">
                         <div class="card-container rounded shadow-lg">
-                            <img src="./asset/Paid-Webinar/Occupational Health.jpg" alt="Avatar" class="d-block w-100 rounded"
-                                height="250px" style="object-fit: cover;">
+                            <img src="./asset/Paid-Webinar/Occupational Health.jpg" alt="Avatar"
+                                class="d-block w-100 rounded" height="250px" style="object-fit: cover;">
                             <div
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Occupational Health"
-                                    data-fees="">
+                                    data-bs-target="#bookingModal" data-event="Occupational Health" data-fees="">
                                     Select
                                 </a>
                             </div>
@@ -562,8 +585,7 @@
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Public Health"
-                                    data-fees="">
+                                    data-bs-target="#bookingModal" data-event="Public Health" data-fees="">
                                     Select
                                 </a>
                             </div>
@@ -576,14 +598,13 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="bg-white rounded p-3 equal-height">
                         <div class="card-container rounded shadow-lg">
-                            <img src="./asset/Paid-Webinar/Health and Lifestyle.jpg" alt="Avatar" class="d-block w-100 rounded"
-                                height="250px" style="object-fit: cover;">
+                            <img src="./asset/Paid-Webinar/Health and Lifestyle.jpg" alt="Avatar"
+                                class="d-block w-100 rounded" height="250px" style="object-fit: cover;">
                             <div
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Health and Lifestyle"
-                                    data-fees="1999">
+                                    data-bs-target="#bookingModal" data-event="Health and Lifestyle" data-fees="1999">
                                     Select
                                 </a>
                             </div>
@@ -596,14 +617,13 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="bg-white rounded p-3 equal-height">
                         <div class="card-container rounded shadow-lg">
-                            <img src="./asset/Paid-Webinar/Hormonal Imbalance.jpg" alt="Avatar" class="d-block w-100 rounded"
-                                height="250px" style="object-fit: cover;">
+                            <img src="./asset/Paid-Webinar/Hormonal Imbalance.jpg" alt="Avatar"
+                                class="d-block w-100 rounded" height="250px" style="object-fit: cover;">
                             <div
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Hormonal Imbalance"
-                                    data-fees="">
+                                    data-bs-target="#bookingModal" data-event="Hormonal Imbalance" data-fees="">
                                     Select
                                 </a>
                             </div>
@@ -616,8 +636,8 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="bg-white rounded p-3 equal-height">
                         <div class="card-container rounded shadow-lg">
-                            <img src="./asset/Paid-Webinar/Breast Cancer Awareness and Prevention.jpg" alt="Avatar" class="d-block w-100 rounded"
-                                height="250px" style="object-fit: cover;">
+                            <img src="./asset/Paid-Webinar/Breast Cancer Awareness and Prevention.jpg" alt="Avatar"
+                                class="d-block w-100 rounded" height="250px" style="object-fit: cover;">
                             <div
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
@@ -628,7 +648,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="fw-bold text-center mt-3" style="font-size: 16px;">Breast Cancer Awareness and Prevention</div>
+                        <div class="fw-bold text-center mt-3" style="font-size: 16px;">Breast Cancer Awareness and
+                            Prevention</div>
                     </div>
                 </div>
 
@@ -636,8 +657,8 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="bg-white rounded p-3 equal-height">
                         <div class="card-container rounded shadow-lg">
-                            <img src="./asset/Paid-Webinar/Cancer in Women and its Prevention.jpg" alt="Avatar" class="d-block w-100 rounded"
-                                height="250px" style="object-fit: cover;">
+                            <img src="./asset/Paid-Webinar/Cancer in Women and its Prevention.jpg" alt="Avatar"
+                                class="d-block w-100 rounded" height="250px" style="object-fit: cover;">
                             <div
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
@@ -648,7 +669,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="fw-bold text-center mt-3" style="font-size: 16px;">Cancer in Women and its Prevention</div>
+                        <div class="fw-bold text-center mt-3" style="font-size: 16px;">Cancer in Women and its
+                            Prevention</div>
                     </div>
                 </div>
 
@@ -718,7 +740,7 @@
                             </div>
                         </div>
                         <div class="fw-bold text-center mt-3" style="font-size: 16px;">Overcoming Obesity
-                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -822,7 +844,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="fw-bold text-center mt-3" style="font-size: 16px;">Awareness on Diabetes & Hypertension
+                        <div class="fw-bold text-center mt-3" style="font-size: 16px;">Awareness on Diabetes &
+                            Hypertension
                         </div>
                     </div>
                 </div>
@@ -1173,7 +1196,7 @@
                             <img src="./asset/Free-Webinar/Dietician-Consultation.jpg" alt="Avatar"
                                 class="d-block w-100 rounded" height="250px" style="object-fit: cover;">
                             <div
-                                class="overlay d-flex flex-column justify-content-center align-items-center text-center">                   
+                                class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
                                     data-bs-target="#bookingModal" data-event="Dietician Consultation" data-fees="5962">
@@ -1422,18 +1445,20 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="bg-white p-3 rounded shadow-lg equal-height">
                         <div class="card-container rounded">
-                            <img src="./asset/Free-Webinar/Mental health education by psychiatrist.jpg" alt="Avatar" class="d-block w-100 rounded"
-                                height="250px" style="object-fit: cover;">
+                            <img src="./asset/Free-Webinar/Mental health education by psychiatrist.jpg" alt="Avatar"
+                                class="d-block w-100 rounded" height="250px" style="object-fit: cover;">
                             <div
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Mental health education by psychiatrist" data-fees="8000">
+                                    data-bs-target="#bookingModal" data-event="Mental health education by psychiatrist"
+                                    data-fees="8000">
                                     Select
                                 </a>
                             </div>
                         </div>
-                        <div class="fw-bold text-center mt-2" style="font-size: 16px;">Mental health education by psychiatrist
+                        <div class="fw-bold text-center mt-2" style="font-size: 16px;">Mental health education by
+                            psychiatrist
                         </div>
                         <div class="fw-bold d-flex justify-content-between align-items-center mt-3">
                             <p class="text-center">Offline price<span class="d-block text-info">₹8000</span>
@@ -1447,18 +1472,20 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="bg-white p-3 rounded shadow-lg equal-height">
                         <div class="card-container rounded">
-                            <img src="./asset/Free-Webinar/Tobacco cessation by pulmonologist.jpg" alt="Avatar" class="d-block w-100 rounded"
-                                height="250px" style="object-fit: cover;">
+                            <img src="./asset/Free-Webinar/Tobacco cessation by pulmonologist.jpg" alt="Avatar"
+                                class="d-block w-100 rounded" height="250px" style="object-fit: cover;">
                             <div
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Tobacco cessation by pulmonologist" data-fees="4000">
+                                    data-bs-target="#bookingModal" data-event="Tobacco cessation by pulmonologist"
+                                    data-fees="4000">
                                     Select
                                 </a>
                             </div>
                         </div>
-                        <div class="fw-bold text-center mt-2" style="font-size: 16px;">Tobacco cessation by pulmonologist
+                        <div class="fw-bold text-center mt-2" style="font-size: 16px;">Tobacco cessation by
+                            pulmonologist
                         </div>
                         <div class="fw-bold d-flex justify-content-between align-items-center mt-3">
                             <p class="text-center">Offline price<span class="d-block text-info">N/A</span>
@@ -1497,8 +1524,8 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="bg-white p-3 rounded shadow-lg equal-height">
                         <div class="card-container rounded">
-                            <img src="./asset/Free-Webinar/Indian Head Massage.jpeg" alt="Avatar" class="d-block w-100 rounded"
-                                height="250px" style="object-fit: cover;">
+                            <img src="./asset/Free-Webinar/Indian Head Massage.jpeg" alt="Avatar"
+                                class="d-block w-100 rounded" height="250px" style="object-fit: cover;">
                             <div
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
@@ -1767,12 +1794,14 @@
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Vaccination depending on the request" data-fees="">
+                                    data-bs-target="#bookingModal" data-event="Vaccination depending on the request"
+                                    data-fees="">
                                     Select
                                 </a>
                             </div>
                         </div>
-                        <div class="fw-bold text-center mt-3" style="font-size: 16px;">Vaccination depending on the request</div>
+                        <div class="fw-bold text-center mt-3" style="font-size: 16px;">Vaccination depending on the
+                            request</div>
                     </div>
                 </div>
 
@@ -1780,18 +1809,20 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="bg-white rounded p-3 equal-height">
                         <div class="card-container rounded shadow-lg">
-                            <img src="./asset/Paid-Camp/Seminars.jpg" alt="Dental Care"
-                                class="d-block w-100 rounded" height="250px" style="object-fit: cover;">
+                            <img src="./asset/Paid-Camp/Seminars.jpg" alt="Dental Care" class="d-block w-100 rounded"
+                                height="250px" style="object-fit: cover;">
                             <div
                                 class="overlay d-flex flex-column justify-content-center align-items-center text-center">
                                 <a href="#" class="p-2 px-3 rounded fw-bold text-decoration-none select-btn"
                                     style="background-color: #fff; color: #229ea6;" data-bs-toggle="modal"
-                                    data-bs-target="#bookingModal" data-event="Seminars (Specialist Doctors)" data-fees="8000 - 12,000">
+                                    data-bs-target="#bookingModal" data-event="Seminars (Specialist Doctors)"
+                                    data-fees="8000 - 12,000">
                                     Select
                                 </a>
                             </div>
                         </div>
-                        <div class="fw-bold text-center mt-3" style="font-size: 16px;">Seminars (Specialist Doctors)</div>
+                        <div class="fw-bold text-center mt-3" style="font-size: 16px;">Seminars (Specialist Doctors)
+                        </div>
                     </div>
                 </div>
 
@@ -1821,6 +1852,29 @@
             });
         });
 
+        document.querySelectorAll('.select-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const modalBody = document.getElementById('modalBodyContent');
+                modalBody.innerHTML = ''; // Clear existing content
+
+                let index = 1;
+                while (this.dataset[`title${index}`] && this.dataset[`description${index}`]) {
+                    const title = this.dataset[`title${index}`];
+                    const desc = this.dataset[`description${index}`];
+
+                    const section = document.createElement('div');
+                    section.className = 'mb-3';
+                    section.innerHTML = `
+          <h6 class="fw-bold mb-1">${title}</h6>
+          <p class="text-muted mb-0">${desc}</p>
+        `;
+
+                    modalBody.appendChild(section);
+                    index++;
+                }
+            });
+        });
+
         document.addEventListener("DOMContentLoaded", function () {
             const selectButtons = document.querySelectorAll(".select-btn");
             selectButtons.forEach(button => {
@@ -1833,6 +1887,7 @@
             });
         });
     </script>
-    
+
 </body>
+
 </html>
